@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+    outline: none;
+    border: none;
+    font-size: 12px;
+    color: #757575;
+    font-family: arial,"Hiragino Sans GB","Microsoft YaHei","Î¢Ü›ÕýºÚów","ƒ«ºÚ Pro",sans-serif;
+}
+body{
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+}
+.clearfix:after,.clearfix:before{
+    content: '';
+    display: block;
+    clear: both;
+}
+.wrapper{
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    background: #f5f5f5;
+
+
+    display: -webkit-box;
+    display: -moz-box;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    box-align: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -o-box-pack: center;
+    box-pack: center;
+}
+.wrapper .wrap{
+    background-color: #fff;
+    width: 854px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 620px;
+    display: block;
+}
+.wrapper .wrap .top{
+    background: #fff;
+    opacity: .3;
+}
+.wrapper .wrap .top:hover{
+    opacity: 1;
+}
+.wrapper .wrap .code{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 68px;
+    height: 68px;
+    background: url("../img/sprite_login.gif") 0 0;
+    cursor: pointer;
+}
+.wrapper .wrap .content{
+    padding: 50px 0 22px;
+}
+.wrapper .wrap .content h1{
+    width: 49px;
+    height: 48px;
+    margin: 0 auto;
+}
+.wrapper .wrap .content h2{
+    font-size: 30px;
+    color: #424242;
+    font-weight: normal;
+    padding-top: 22px;
+}
+.wrapper .wrap .area{
+    width: 358px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.wrapper .wrap .area input{
+    display: block;
+    width: 326px;
+    height: 22px;
+    line-height: 22px;
+    padding: 13px 16px 13px 14px;
+    border: 1px solid #e0e0e0;
+    text-align: left;
+}
+.wrapper .wrap .area input:focus{
+    border: 1px solid #ff6700;
+}
+.wrapper .wrap .area .first{
+    margin-top: 10px;
+}
+.wrapper .wrap .area .second{
+    margin: 14px 0;
+}
+.wrapper .wrap .area .blank{
+    width: 100%;
+    height: 14px;
+}
+.wrapper .wrap .area .error{
+    display: none;
+    width: 100%;
+    height: 21px;
+    line-height: 20px;
+    color: #f56700;
+    text-align: left;
+    padding-bottom: 5px;
+}
+.wrapper .wrap .area .error img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    margin: -1px 5px 0 0;
+}
+.wrapper .wrap .area .last{
+    margin-top: 10px;
+    margin-bottom: 29px;
+    background-color: #ef5b00;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+
+.wrapper .wrap .area fieldset{
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+}
+.wrapper .wrap .area fieldset legend{
+    font-size: 14px;
+    color: #b0b0b0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wrapper .wrap .area .otherWay .icon{
+    padding-top: 10px;
+    text-align: center;
+}
+.wrapper .wrap .area .otherWay .icon a{
+    width: 30px;
+    height: 30px;
+    margin: 0 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.wrapper .wrap .area .otherWay .icon .qq{
+    background: url("../img/qq.jpg") center center;
+}
+.wrapper .wrap .area .otherWay .icon .weibo{
+    background: url("../img/weibo.jpg") center center;
+}
+.wrapper .wrap .area .otherWay .icon .zhifubao{
+    background: url("../img/zhifubao.jpg") center center;
+}
+.wrapper .wrap .area .otherWay .icon .qq:hover{
+    background: url("../img/hqq.jpg") center center;
+}
+.wrapper .wrap .area .otherWay .icon .weibo:hover{
+    background: url("../img/hweibo.jpg") center center;
+}
+.wrapper .wrap .area .otherWay .icon .zhifubao:hover{
+    background: url("../img/hzhifubao.jpg") center center;
+}
+.wrapper .wrap  .forget{
+
+    padding-top: 30px;
+    text-align: center;
+}
+.wrapper .wrap .forget span{
+    color: #e0e0e0;
+}
+.wrapper .wrap .forget a{
+    padding: 0 9px;
+    font-size: 14px;
+    color: #757575;
+}
+.wrapper .qrcode{
+    display: none;
+    height: 620px;
+    width: 854px;
+    background: #fff;
+    position: relative;
+}
+.wrapper .qrcode a{
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: url("../img/colse.jpg") center center;
+    z-index: 5;
+}
+.wrapper .qrcode .box{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -200px;
+    margin-left: -300px;
+}
+.wrapper .qrcode .box .hd{
+    padding-bottom: 50px;
+    text-align: center;
+}
+.wrapper .qrcode .box .hd h3{
+    font-size: 30px;
+    color: #ff6700;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+.wrapper .qrcode .box .hd p{
+
+}
+.wrapper .qrcode .iframe{
+    text-align: center;
+    width: 600px;
+    height: 273px;
+}
+.custom{
+    width: 100%;
+    height: 80px;
+    background: #f5f5f5;
+}
+.custom .fontStyle{
+    text-align: center;
+}
+.custom .fontStyle li{
+    display: inline-block;
+}
+.custom .fontStyle li a{
+    display: inline-block;
+    padding: 0 10px;
+}
+.custom .fontStyle li a.bg{
+    color: #333;
+}
+.custom .fontStyle li a:hover{
+    color: #333;
+}
+.custom .declare{
+    padding: 10px;
+}
+.gray{
+    min-height: 22px;
+    height: auto;
+    width: 100%;
+    background: #f5f5f5;
+}
